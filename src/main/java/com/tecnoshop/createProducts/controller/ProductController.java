@@ -24,4 +24,9 @@ public class ProductController {
         return ResponseEntity.ok(service.create(dto));
     }
 
+    @GetMapping("/ping")
+    public ResponseEntity<String> ping() {
+        return ResponseEntity.ok("pong");
+    }
+
 }
